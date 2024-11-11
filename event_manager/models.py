@@ -1,6 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User  # Importing once is sufficient
-from .models import Event  # If this file is in the same directory
+from django.contrib.auth.models import User  
+from .models import Event  
 
 class Event(models.Model):
     name = models.CharField(max_length=200)
